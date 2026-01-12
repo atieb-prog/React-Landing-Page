@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Container, Row, Col, Card,Button } from "react-bootstrap";
 
 function LearnPage() {
@@ -142,7 +143,7 @@ function LearnPage() {
                     <Card.Text>
                         Contact us today to discuss your needs and explore how we can help your business thrive in the digital age.
                     </Card.Text>
-                    <Button variant="primary" href="/contact">
+                    <Button as={Link} to="/contact" variant="primary">
                         Contact Us
                     </Button>
                     <Button variant="outline-primary" href="tel:+11234567890" className="ms-3">

@@ -5,6 +5,7 @@ import {
   Col,
   Card
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function ServicesPage() {
   return (
@@ -144,10 +145,10 @@ function ServicesPage() {
           <p className="lead mb-4">
             Let's discuss how our services can help your business grow
           </p>
-          <Button variant="primary" size="lg" className="me-3" href="/contact">
+          <Button as={Link} to="/contact" variant="primary" size="lg" className="me-3">
             Contact Us
           </Button>
-          <Button variant="outline-primary" size="lg" href="/pricing">
+          <Button as={Link} to="/pricing" variant="outline-primary" size="lg">
             View Pricing
           </Button>
         </Container>

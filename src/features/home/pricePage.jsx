@@ -5,6 +5,7 @@ import{
     Card,
     Button
 } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function PricePage() {
     return (
@@ -38,7 +39,7 @@ function PricePage() {
                                         <li>Email Support</li>
                                         <li>Basic Analytics</li>
                                     </ul>
-                                    <Button variant="primary" href='/contact'>Contact Sales</Button>
+                                    <Button as={Link} to='/contact' variant="primary">Contact Sales</Button>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -53,7 +54,7 @@ function PricePage() {
                                         <li>Priority Email Support</li>
                                         <li>Advanced Analytics</li>
                                     </ul>
-                                    <Button variant="primary" href='/contact'>Contact Sales</Button>
+                                    <Button as={Link} to='/contact' variant="primary">Contact Sales</Button>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -69,7 +70,7 @@ function PricePage() {
                                         <li>24/7 Phone & Email Support</li>
                                         <li>Comprehensive Analytics</li>
                                     </ul>
-                                    <Button variant="primary" href='/contact'>Contact Sales</Button>
+                                    <Button as={Link} to='/contact' variant="primary">Contact Sales</Button>
                                 </Card.Body>
                             </Card>
                         </Col>

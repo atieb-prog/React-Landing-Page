@@ -5,6 +5,7 @@ import {
   Col,
   Card,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
@@ -21,10 +22,10 @@ function HomePage() {
             experience
           </p>
           <div className="hero-buttons">
-            <Button variant="light" size="lg" className="me-3" href="/pricing">
+            <Button as={Link} to="/pricing" variant="light" size="lg" className="me-3">
               Get Started
             </Button>
-            <Button variant="outline-light" size="lg" href="/learn">
+            <Button as={Link} to="/learn" variant="outline-light" size="lg">
               Learn More
             </Button>
           </div>

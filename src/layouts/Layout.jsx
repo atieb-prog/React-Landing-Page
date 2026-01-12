@@ -1,4 +1,4 @@
-import { Outlet } from "react-router";
+import { Outlet, Link } from "react-router-dom";
 import {
   Container,
   Navbar,
@@ -15,17 +15,17 @@ function Layout() {
       {/* navigation */}
       <Navbar collapseOnSelect expand="lg" className="navbar-1" variant="dark">
         <Container>
-          <Navbar.Brand className="navbar-brand" href="/home">
+          <Navbar.Brand className="navbar-brand" as={Link} to="/home">
             React Website
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="border-0" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="navcol ms-auto">
-              <Nav.Link href="/home">Home</Nav.Link>
-              <Nav.Link href="/services">Services</Nav.Link>
-                <Nav.Link href="/pricing">Pricing</Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/contact">Contact Us</Nav.Link>
+              <Nav.Link as={Link} to="/home">Home</Nav.Link>
+              <Nav.Link as={Link} to="/services">Services</Nav.Link>
+              <Nav.Link as={Link} to="/pricing">Pricing</Nav.Link>
+              <Nav.Link as={Link} to="/about">About</Nav.Link>
+              <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -52,12 +52,12 @@ function Layout() {
               <div className="footer-section">
                 <h5 className="footer-heading mb-3">Quick Links</h5>
                 <div className="footer-links">
-                  <a href="/home">Home</a>
-                  <a href="/services">Services</a>
-                  <a href="/pricing">Pricing</a>
-                  <a href="/about">About</a>
-                  <a href="/faq">FAQ</a>
-                  <a href="/contact">Contact Us</a>
+                  <Link to="/home">Home</Link>
+                  <Link to="/services">Services</Link>
+                  <Link to="/pricing">Pricing</Link>
+                  <Link to="/about">About</Link>
+                  <Link to="/faq">FAQ</Link>
+                  <Link to="/contact">Contact Us</Link>
                 </div>
               </div>
             </Col>
