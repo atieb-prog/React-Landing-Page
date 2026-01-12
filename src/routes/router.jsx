@@ -1,11 +1,11 @@
 import { createBrowserRouter, Route } from "react-router";
 import Layout from "@/layouts/Layout";
-import HomePage from "@features/home/HomePage";
+import HomePage from "@features/home/homePage";
 import ServicesPage from "@features/home/servicesPage";
 import Routepath from "@routes/routes.js";
-import PricePage from "@features/home/PricePage";
-import AboutPage from "@features/home/AboutPage";
-import ContactPage from "@features/home/ContactPage";
+import PricePage from "@features/home/pricePage";
+import AboutPage from "@features/home/aboutPage";
+import ContactPage from "@features/home/contactPage";
 import FaqPage from "@features/home/faqPage";
 import LearnPage from "@features/home/learnPage";
 
